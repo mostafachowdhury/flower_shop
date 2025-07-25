@@ -6,22 +6,32 @@
     <title>Floewer_Shop</title>
     <link rel="stylesheet" href="style.css"/>
       <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+      <script src="https://kit.fontawesome.com/98b7707db6.js" crossorigin="anonymous"></script>
 </head>
 <body>
     
     <header>
-        <nav class="bg-sky-500/100">
+        <nav class="">
             
             <ul>
                   <div>
                 <img src="./img/logo.png"/>
             </div>
-            <li>
-                <a>home</a>
-                <a>shop</a>
-                <a>about</a>
-                <a>cart</a>
-            </li>
+           <div class="nav_link">
+
+              <div class="links">
+                     <li><a>Home</a></li>
+                 <li><a>shop</a></li>
+                 <li><a>About Us</a></li>
+              </div>
+            <div>
+                 
+                   <i class="fa-solid fa-cart-shopping"></i>
+                    <a>Cart</a>
+                    <span>$33</span>
+                 </div>
+
+           </div>
             </ul>
         </nav>
           <div class="banner">
@@ -175,9 +185,11 @@
 
 
              <section class="deals">
-                       <h3>Latest  Deals</h3>
+                     <div class="deal_content">
+                          <h3 class="deals_head"><span>Latest</span>  Deals</h3>
                        <p>Indulge your senses with the beauty and fragrance of our 
                         fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</p>
+                     </div>
 
                                
                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -200,7 +212,7 @@
 
                         </div>
                         </div>
-                        <div class="box col-span-2 row-span-2">
+                        <div class="box md:col-span-2 row-span-1">
                                 <img src="./img/deal-zabo.png"/>
 
                                           <div class="shadow">
@@ -212,22 +224,73 @@
                         </div>
 
                        </div>
-             </section>
+             </section> 
 
 
     </main>
-
-    
+ 
              <section class="join">
                      <div class="join_container">
+                        
                          <div class="jain_content">
-                        <h2>Join the colorful Bunch</h2>
+                        <h2 class="join_head">Join the colorful Bunch</h2>
                         <div>
-                              <input type="text"/>
+                              <input type="email" placeholder="write your email"/>
                               <button class="button">subscribe</button>
                         </div>
                       </div>
+
                      </div>
-             </section>
+             </section> 
+
+
+
+             <footer>
+                  <div class="footer_content">
+                         <div class="basis-4/12 logos">
+                               <div class="footer_logo">
+                                    <img src="./img/logo.png"/>
+                                    <p>
+                                          Indulge your senses with the beauty and fragrance of our fresh flower shop. 
+                                    </p>
+                               </div>
+                         </div>
+                         <div class="basis-2/12 about ">
+                               <ul>
+                                    <li>home</li>
+                                    <li>about</li>
+                                    <li>blog</li>
+                                    <li>FQ</li>
+                                    <li>contact</li>
+                               </ul>
+                         </div>
+                         <div class="basis-2/12  features">
+                            <ul>
+                                    <li>Features</li>
+                                    <li>Pricing</li>
+                                    <li>Privacy Policy</li>
+                                    <li>Terms Of Services</li>
+                                    <li>Center</li>
+                               </ul>
+                         </div>
+                         <div class="basis-4/12 icons">
+                               <div class="icon_container">
+                                     <div class="linkdin">
+                              <img src="./img/icon-linkedin.png"/>
+                             </div>
+                             <div class="twitter">
+                              <img src="./img/icon-twitter.png"/>
+                             </div>
+                             <div class="facebook">
+                              <img src="./img/icon-facebook.png"/>
+                             </div>
+                             <div class="youtube">
+                              <img src="./img/icon-youtube.png"/>
+                             </div>
+                               </div>
+                         </div>
+                        
+                  </div>
+             </footer>
 </body>
 </html>

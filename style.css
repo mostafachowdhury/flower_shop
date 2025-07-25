@@ -7,6 +7,8 @@
 
 body{
     background-color:#f5f8ff;
+
+ 
 }
 header{
     max-width: 1140px;
@@ -15,13 +17,22 @@ header{
 nav{
     max-width: 1140px;
     margin:0px auto;
+
    
 }
 
+.nav_link{
+    display: flex;
+    align-items: center;
+}
+.links{
+    display: flex;
+}
 nav ul{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding:10px 0px
 }
 
 
@@ -43,7 +54,7 @@ nav ul li a{
 
 .benner_content{
     max-width: 570px;
-    border: 1px solid red;
+
     
 }
 
@@ -61,13 +72,13 @@ margin-bottom: 10px;
 }
 .banner_img{
     max-width: 570px;
-        border: 1px solid red;
 }
 
 
 main{
     max-width: 1140px;
     margin: 0px auto;
+ 
 }
 
 
@@ -145,8 +156,8 @@ font-size: 20px;
 
 }
 .trusted_content{
-    width: 540px;
-   
+    width:553px;
+
     padding: 20px 0px;
     display: flex;
     flex-direction: column;
@@ -164,7 +175,7 @@ font-size: 20px;
 .info_text{
   text-align:center;
     width: 540px;
-    color:red
+    color:rgb(29, 28, 28)
     
 }
 .trusted_logo{
@@ -184,24 +195,40 @@ font-size: 20px;
 
 
 
-
-.deals{
-    padding: 60px 0px;
+.deal_content{
+    padding: 20px 0px;
 }
 
+.deals_head{
+text-align: center;
 
+}
+
+.deals_head{
+    text-align: center;
+    font-size: 36px;
+font-weight:bold;
+}
+.deals_head span{
+    color:chocolate
+}
+.deal_content p{
+    text-align: center;
+}
 
 .box{
     position: relative;
-    width: 100%;  
+    max-width:100%;  
     height: 100%;
-    border-radius: 10px;
+    border-radius: 100px;
 
+    border-radius: 10px;
 }
 .box img{
     width:100%;
     height: 100%;
         border-radius: 10px;
+      
 }
 
 .shadow{
@@ -267,16 +294,210 @@ font-size: 20px;
 
 .join_container{
 
+  
+    height:633px;
     background-image: url(./img/news-letter-bg.png);
-    height: 555px;
-    background-position: center;
+    width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center center;
+    position: relative;
+
 }
 
+
 .jain_content{
+     display: flex;
+     flex-direction: column;
+     /* height: 100%;
+     width: 100%; */
+     align-items: center;
+     justify-content: center;
+    border: 1px solid red;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+ 
+ 
+}
+.join_head{
+    font-size: 45px;
+    color:white;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+input{
+    background: rgb(214, 212, 212);
+    width:608px;
+    padding: 10px 30px;
+}
+button{
+    background-color: orange;
+    margin-left: 20;
+    padding: 10px 30px;
+}
+
+
+
+
+
+
+
+
+footer{
+    padding: 40px 0px;
+
+   
+}
+.footer_content{
+    max-width: 1120px;
+    margin: 0px auto;
+    display: flex;
+}
+
+
+.footer_logo p{
+    width: 333px;
+    color: rgb(138, 135, 135);
+}
+.icon_container{
+    display:flex;
+    justify-content:space-evenly;
+}
+
+
+
+
+@media screen    and (max-width:576px){
+
+
+body{
+    width: 100%;
+}
+
+  main{
+    padding: 10px;
+  }
+
+  
+    .links{
+    display:none;
+}
+.banner{
+    display: flex;
+  
+    align-items:end ;
+    flex-direction: column-reverse                      ;
+    padding: 60px 0px;
+}
+
+.benner_content h2{
+width: 400px;
+font-size: 36px;
+margin-bottom: 10px;
+padding: 10px;
+}
+.benner_content p{
+    padding: 10px;
+    font-size: 18px;
+}
+.trusted_box{
     display: flex;
     flex-direction: column;
-    align-items: center;
-  
+    justify-content: space-between;
 }
+.trusted_content{
+    width:100%;
+    
+}
+.trusted_content h2{
+    font-size:24px;
+
+     width:300px ;
+   color: #110d0d88;
+}
+.trusted_logo{
+    display: none;
+}
+.trusted_img{
+    width: 100%;
+}
+
+.trusted_box .info_text{
+
+    width:40px;
+    color:rgb(0, 0, 0);
+
+    align-items:end;
+    
+}
+
+
+.zebo_flower{
+    font-size:20px;
+}
+.zeba_shop{
+    position: relative;
+    font-size: 18px;
+    color: white;
+}
+.zeba_shop::after{
+    content: "";
+    border: 1px solid rgb(255, 255, 255);
+    position: absolute;
+    width:140px;
+    top:40px;
+    left: -30%;
+}
+
+
+.join_head{
+font-size: 20px;
+height: 100%;
+width: 100%;
+}
+
+input{
+    background: rgb(214, 212, 212);
+    width:308px;
+    padding: 10px 30px;
+}
+button{
+    background-color: orange;
+    margin-left: 20;
+    padding: 10px 30px;
+}
+
+
+
+footer{
+    width: 100%;
+}
+
+.footer_content{
+    width: 1120px;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.icon_container{
+    display:flex;
+    width:200px;
+
+
+}
+.about,.features,.icons,.logos{
+
+    padding: 10px 10px;
+}
+
+
+
+}
+
+
+
+
+
