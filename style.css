@@ -6,7 +6,7 @@
 }
 
 body{
-    background-color:;
+    background-color:#f5f8ff;
  
 
  
@@ -48,8 +48,14 @@ nav ul li a{
 .cart{
     font-size: 20px;
 }
-.cart span{
-    font-size: 18px;
+
+.cart_contain{
+margin-right: 10px;
+}
+
+.cart_contain span{
+
+font-size: 20px;
 }
 .banner{
     display: flex;
